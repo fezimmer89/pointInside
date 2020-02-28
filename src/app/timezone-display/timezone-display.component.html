@@ -1,0 +1,5 @@
+<div class="center-content" *ngIf="timezone">
+  Local Time in:
+  <h5><i>{{ timezone.countryName }}</i></h5> is:
+  <h5><i>{{ timezone.formatted | date: 'full' }}</i></h5>
+</div>

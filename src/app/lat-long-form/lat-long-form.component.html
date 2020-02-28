@@ -1,0 +1,26 @@
+<h2>Lookup any time across the globe!</h2>
+<p>Enter a valid longitude and latitude to get started:</p>
+<form [formGroup]="latLongForm" (ngSubmit)="onSubmit()" class="lat-long-form">
+  <div class="form-group">
+    <label for="latitude">Latitidue</label>
+    <div class="form-group" [ngClass]="{'is-invalid': invalidLatitude()}">
+      <input type="number" class="form-control" formControlName="lat" id="lat" name="lat" placeholder="Please  Enter Latitiude">
+    </div>
+    <p *ngIf="invalidLatitude()" id="lat_error" class="text-danger">
+      Please provide a Latitude.
+    </p>
+  </div>
+  <div class="form-group">
+    <label for="longitude">Longitude</label>
+    <div class="form-group" [ngClass]="{'is-invalid': invalidLongitude()}">
+      <input type="number" class="form-control" formControlName="long" id="long" name="long" placeholder="Please Enter Longitude">
+    </div>
+    <p *ngIf="invalidLongitude()" id="long_error" class="text-danger">
+      Please provide a Longitude.
+    </p>
+  </div>
+  <div [hidden]="!errors" class="server-error text-danger">
+    {{ errors }}
+  </div>
+  <button type="submit" class="btn btn-primary" [disabled]="isLoading">Submit</button>
+</form>
