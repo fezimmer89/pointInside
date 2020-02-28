@@ -13,7 +13,7 @@ export class TimezoneService {
 
   async getFromLatLong(lat, long) {
     const timezone = await new Promise<any>((resolve, reject) => {
-      return this.http.request('POST', 'http://localhost:4200/api/v1/timezones', {
+      return this.http.request('POST', 'http://localhost:4000/api/v1/timezones', {
         body: {
           lat: lat,
           long: long,
