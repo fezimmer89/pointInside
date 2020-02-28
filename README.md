@@ -15,9 +15,12 @@ Build your app using any version of Angular that you are comfortable with, if it
 Package up your source so that it can be easily built and run by our team. Deliver your solution via email as a link to GitHub, or a zip file in Dropbox or similar for our team to review.
 
 ## Running the project
-To run the project start by installing `nodejs` if you do not already have it. Project was developed on the latest version of node. Then install the package dependencies by running `npm install`.
+    1. install nodejs - `nodejs v13.0.1` if you do not already have it
+    2. install the application dependencies by running `npm install`
+    3. run the server setup step using `ng run ngPointInside:server`
+    4. and finally run the app 'npm start`
 
-Once the dependencies are installed you are ready to compile, build and run the project using `npm start`.
+If you want to run any of the tests you will need to install the angular cli - `npm install -g @angular/cli`.
 
 ## Development server
 
