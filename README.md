@@ -21,8 +21,6 @@ Package up your source so that it can be easily built and run by our team. Deliv
    4. run the server setup step using `ng run ngPointInside:server`
    5. and finally run the app `npm start`
 
-If you want to run any of the tests you will need to install the angular cli - `npm install -g @angular/cli`.
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
